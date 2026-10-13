@@ -1,5 +1,16 @@
 This is an Expo/React Native mobile application. Prioritize mobile-first patterns, performance, and cross-platform compatibility.
 
+## Read plan.md before writing any code
+
+`plan.md` is the build spec for this project. It contains the pinned stack, the design
+system rules, the database schema, the exact API contracts, the SDK 57 API traps, and a
+strict per-agent file-ownership table.
+
+- Building a specific section? Do only your own section. Never create or edit a file
+  outside your ownership row — that is how parallel agents collide.
+- Building UI? Read `DESIGN.md` §4.2 first. Negative constraints, not adjectives.
+- Touching Expo APIs? §4.1 and §10 list the verified SDK 57 traps. Do not trust recall.
+
 ## Expo has changed — do not trust your training data
 
 Expo ships breaking changes every SDK release. APIs you remember are likely renamed, moved, or removed. Before writing any code that touches an Expo, EAS, or React Native API:

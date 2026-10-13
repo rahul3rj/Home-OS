@@ -30,8 +30,10 @@ yarn-error.*
 .DS_Store
 *.pem
 
-# local env files
+# local env files — NEVER commit these, they hold publishable keys
+.env
 .env*.local
+!.env.example
 
 # typescript
 *.tsbuildinfo
@@ -39,3 +41,10 @@ yarn-error.*
 # generated native folders
 /ios
 /android
+
+# dev-only planning docs — not part of the shipped app
+plan.md
+DESIGN.md
+feature.md
+AGENTS.md
+CLAUDE.md

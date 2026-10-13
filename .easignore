@@ -1,0 +1,12 @@
+# EAS upload ignore — keeps cloud build from choking on local symlinks
+.agents/
+.claude/
+.expo/
+dist/
+web-build/
+node_modules/
+.git/
+ios/
+android/
+*.tsbuildinfo
+.metro-health-check*
